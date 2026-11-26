@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kesar Kitchen · Modern Indian Dining, Pune</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;700&family=Rozha+One&family=Hind:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Kesar Kitchen</a>
+    <div class="tools"><select id="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select><button class="cartbtn" id="cartbtn" aria-label="Open cart">🛒<b id="cc" hidden>0</b></button><button class="burger" aria-label="Open menu" aria-expanded="false" id="burger">☰</button></div>
+    <ul id="links">
+      <li><a href="#menu" data-t="menu">Menu</a></li>
+      <li><a href="#chef" data-t="chef">Our chef</a></li>
+      <li><a href="#reviews" data-t="reviews">Reviews</a></li>
+      <li><a href="#reserve" data-t="reserve">Reserve</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1 data-t="hero">Slow-cooked Indian food, plated for sharing.</h1>
+      <p data-t="sub">Wood-fired breads, hand-ground masalas and a dessert counter you’ll plan your evening around. Open daily on Koregaon Park Road, Pune.</p>
+      <a class="btn" href="#reserve" data-t="book">Book a table</a><a class="btn" href="#menu" data-t="see">See the menu</a>
+    </div>
+    <div class="plate" aria-hidden="true">
+      <div class="steam"><i></i><i></i><i></i></div>
+      <div class="disc"><span class="main">🍛</span></div>
+      <span class="orb a">🫓</span><span class="orb b">🌶️</span><span class="orb c">🍋</span><span class="orb d">🌿</span>
+    </div>
+  </div>
+</header>
+
+<section id="menu">
+  <div class="wrap">
+    <h2 data-t="menuT">The menu</h2>
+    <p class="lede" data-t="menuL">Everything is made to order. Tell your server about allergies and we’ll adjust.</p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="grid" id="grid" role="tabpanel"></div>
+  </div>
+</section>
+
+<section class="chef" id="chef">
+  <div class="wrap">
+    <div class="portrait" aria-hidden="true">👨‍🍳</div>
+    <div>
+      <h2>Chef Meera Kulkarni</h2>
+      <p>Meera learned to cook beside her grandmother in Kolhapur, grinding spices on a stone before sunrise. After ten years in kitchens in Mumbai and Lisbon, she came home to Pune with one idea: keep the flavours of the family table and serve them with care.</p>
+      <p>Her menu changes with the market. If the tomatoes are sweet, they’re on the plate. If they aren’t, they wait.</p>
+      <div class="sig">Meera Kulkarni, Head Chef</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2 data-t="revT">What guests say</h2>
+    <p class="lede">Notes from recent tables.</p>
+    <div class="quotes">
+      <blockquote><div class="stars" aria-label="5 stars">★★★★★</div><p>The butter chicken tasted like someone’s home, not a restaurant. We came back two days later.</p><cite>Ananya R.<span>Birthday dinner</span></cite></blockquote>
+      <blockquote><div class="stars" aria-label="5 stars">★★★★★</div><p>Our server walked us through the menu without rushing. The gulab jamun tart is worth the visit alone.</p><cite>Rohan D.<span>Date night</span></cite></blockquote>
+      <blockquote><div class="stars" aria-label="4 stars">★★★★☆</div><p>Great for a group of eight. Plates arrive together and the mango lassi is thick and cold.</p><cite>Priya &amp; friends<span>Team lunch</span></cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="find">
+  <div class="wrap">
+    <h2 data-t="mapT">Find us</h2>
+    <div class="map">
+      <svg viewBox="0 0 600 260" role="img" aria-label="Map showing Kesar Kitchen on Lane 5, Koregaon Park">
+        <rect width="600" height="260" style="fill:var(--paper)"/>
+        <path d="M0 215 C150 180 260 250 600 195 L600 260 L0 260Z" fill="#6fb0c0" opacity=".5"/>
+        <rect x="420" y="20" width="150" height="80" rx="14" fill="#7cc27c" opacity=".5"/>
+        <g style="stroke:var(--card)" stroke-width="16" fill="none"><path d="M0 120H600M170 0V260M380 0V190M0 190L600 70"/></g>
+        <g style="fill:var(--muted)" font-size="13" font-family="Hanken Grotesk,sans-serif"><text x="20" y="112">Koregaon Park Rd</text><text x="392" y="170">Lane 5</text><text x="430" y="64">Osho Park</text><text x="20" y="245">Mula-Mutha river</text></g>
+        <g transform="translate(380 120)"><circle class="pulse" r="14" fill="#c8372d" opacity=".4"/><circle r="11" fill="#c8372d" stroke="#fff" stroke-width="3"/><text x="18" y="-14" font-size="15" font-weight="700" font-family="Hanken Grotesk,sans-serif" style="fill:var(--text)">Kesar Kitchen</text></g>
+      </svg>
+      <div class="cap"><span>14 Lane 5, Koregaon Park, Pune</span><a class="btn" data-t="dir" href="https://www.google.com/maps/search/?api=1&query=Koregaon+Park+Pune" target="_blank" rel="noopener">Get directions</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="wrap rwrap">
+    <div>
+      <h2 data-t="resT">Reserve a table</h2>
+      <p class="lede" data-t="resL">Pick a date, party size and time. We’ll confirm by phone within the hour.</p>
+      <ul class="facts">
+        <li><b>Lunch</b> 12:00 – 3:30 pm</li>
+        <li><b>Dinner</b> 7:00 – 11:30 pm</li>
+        <li><b>Groups over 10</b> call us on +91 20 5550 1234</li>
+        <li><b>Address</b> 14 Lane 5, Koregaon Park, Pune</li>
+      </ul>
+    </div>
+    <div id="formBox">
+      <form id="rf" novalidate>
+        <div class="row">
+          <div><label for="nm">Name</label><input id="nm" type="text" autocomplete="name"><p class="err" id="e-nm"></p></div>
+          <div><label for="ph">Phone</label><input id="ph" type="tel" autocomplete="tel" placeholder="10-digit number"><p class="err" id="e-ph"></p></div>
+        </div>
+        <div class="row">
+          <div><label for="dt">Date</label><input id="dt" type="date"><p class="err" id="e-dt"></p></div>
+          <div><span class="lab">Guests</span>
+            <div class="step"><button type="button" id="minus" aria-label="Fewer guests">−</button><output id="gc" aria-live="polite">2</output><button type="button" id="plus" aria-label="More guests">+</button></div>
+          </div>
+        </div>
+        <div class="f"><span class="lab">Time</span><div class="slots" id="slots"></div><p class="err" id="e-tm"></p></div>
+        <button class="btn" type="submit" data-t="send">Request reservation</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>Kesar Kitchen · 14 Lane 5, Koregaon Park, Pune · Sample site built for learning</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <div><h3 data-t="cart">Your order</h3><button class="x" id="cx" aria-label="Close cart">✕</button></div>
+  <ul id="cl"></ul>
+  <div class="tot"><span data-t="total">Total</span><b id="ct">₹0</b></div>
+  <button class="btn" id="co" data-t="order" disabled>Place pickup order</button>
+</aside>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Dish gallery">
+  <div><div class="big" id="lbbig"></div><h3 id="lbname"></h3><p class="lede" id="lbdesc" style="margin:6px auto 10px"></p><span class="price" id="lbprice"></span>
+  <div class="lbnav"><button id="lbp" aria-label="Previous dish">‹</button><button class="add" id="lba"></button><button id="lbn" aria-label="Next dish">›</button><button id="lbx" aria-label="Close">✕</button></div></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
